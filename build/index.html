@@ -1588,8 +1588,11 @@
         </script>
         <script>
             $(document).ready(function () {
-      $('#data').DataTable();
-    });
+                $('#data').DataTable({
+                    pageLength : 15,
+                    lengthMenu: [[15, 30, 45, 60, -1], [15, 30, 45, 60, 'Show all']]
+                });
+            });
         </script>
     </body>
 </html>
